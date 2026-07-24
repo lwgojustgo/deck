@@ -1,6 +1,6 @@
 module github.com/ajstarks/deck
 
-go 1.25.0
+go 1.22.8
 
 require (
 	codeberg.org/go-pdf/fpdf v0.12.0
