@@ -3,7 +3,6 @@ module github.com/ajstarks/deck
 go 1.22.8
 
 require (
-	codeberg.org/go-pdf/fpdf v0.12.0
 	fyne.io/fyne/v2 v2.5.3
 	github.com/ajstarks/deck/generate v0.0.0-20230623153652-ebe7b794a4b1
 	github.com/ajstarks/fc v0.0.0-20230606144319-ef5d5cb73a3d
@@ -11,6 +10,7 @@ require (
 	github.com/ajstarks/svgo v0.0.0-20211024235047-1546f124cd8b
 	github.com/disintegration/gift v1.2.1
 	github.com/fogleman/gg v1.3.0
+	github.com/go-pdf/fpdf v0.9.0
 	github.com/mandolyte/mdtopdf v1.3.2
 )
 
@@ -41,10 +41,17 @@ require (
 	github.com/srwiley/rasterx v0.0.0-20220730225603-2ab79fcdd4ef // indirect
 	github.com/stretchr/testify v1.8.4 // indirect
 	github.com/yuin/goldmark v1.7.1 // indirect
-	golang.org/x/image v0.40.0 // indirect
+	golang.org/x/image v0.18.0 // indirect
 	golang.org/x/mobile v0.0.0-20231127183840-76ac6878050a // indirect
-	golang.org/x/net v0.40.0 // indirect
-	golang.org/x/sys v0.33.0 // indirect
-	golang.org/x/text v0.37.0 // indirect
+	golang.org/x/net v0.27.0 // indirect
+	golang.org/x/sys v0.22.0 // indirect
+	golang.org/x/text v0.16.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
+)
+
+replace (
+	github.com/boombuler/barcode => github.com/boombuler/barcode v1.0.1
+	github.com/phpdave11/gofpdi => github.com/phpdave11/gofpdi v1.0.13
+	github.com/ruudk/golang-pdf417 => github.com/ruudk/golang-pdf417 v0.0.0-20201230142125-a7e3863a1245
+	golang.org/x/image => golang.org/x/image v0.18.0
 )
